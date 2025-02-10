@@ -1,0 +1,55 @@
+.product {
+  align-items: center;
+  background: url("../../../assets/backgrounds/blue-bg.webp") no-repeat center /
+    cover;
+  display: flex;
+  padding-left: 120px;
+  gap: 15px;
+}
+
+.product__image {
+  max-width: 840px;
+  width: 60%;
+  transform: translateY(-15%);
+}
+
+.product__items {
+  margin-top: 5%;
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .product {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+
+  .product__items {
+    margin-top: 0;
+  }
+
+  .product__image {
+    width: 120%;
+    max-width: 400px;
+    transform: translate(-9%, -15%);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+}

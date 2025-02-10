@@ -1,0 +1,51 @@
+.presentation {
+  align-items: center;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  padding: 60px 160px;
+}
+
+.presentation__image {
+  width: 40%;
+}
+
+.presentation__info > * {
+  margin-bottom: 30px;
+}
+
+.presentation__text {
+  width: 87%;
+}
+
+.presentation .cta-btn {
+  margin-top: 50px;
+}
+
+@media (max-width: 1100px) {
+  .presentation {
+    flex-direction: column;
+    gap: 0;
+    padding: 60px 0;
+  }
+
+  .presentation__image {
+    min-width: 200px;
+  }
+  .presentation__title {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .presentation__text {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 80%;
+  }
+
+  .presentation .cta-btn {
+    margin: 50px auto;
+    width: 80%;
+  }
+}

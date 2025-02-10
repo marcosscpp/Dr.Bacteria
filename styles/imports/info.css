@@ -1,0 +1,32 @@
+.info {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.info__text {
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.info__btn {
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    padding: 60px 30px;
+  }
+  
+  .info__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .info__text {
+    width: 100%;
+    text-align: left;
+  }
+}

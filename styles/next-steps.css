@@ -1,0 +1,149 @@
+@import url("global.css");
+@import url("./imports/event.css");
+@import url("./imports/footer.css");
+
+.event {
+  position: absolute;
+}
+
+.alert__image {
+  width: 130px;
+}
+
+.next-steps {
+  background: url("../assets/backgrounds/next-steps-bg.webp") no-repeat center /
+    cover;
+
+  min-height: 100vh;
+  padding-bottom: 50px;
+  padding-top: 180px;
+}
+
+.next-steps__alert {
+  text-align: center;
+}
+
+.next-steps__cards {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.alert__title {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.alert__text {
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.step__card {
+  flex-direction: column;
+  background: var(--g01);
+  border-radius: 20px;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  box-shadow: 0px 3px 6px #00000029;
+  width: 400px;
+  min-height: 320px;
+  padding: 20px;
+  padding-top: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.step__title {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.step__markup {
+  color: var(--g01);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+  width: 80%;
+  top: 0;
+  border-radius: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: linear-gradient(90deg, var(--g08), var(--g07));
+}
+
+.step__text {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.step__btn {
+  align-items: center;
+  border: 2px solid var(--g07);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: var(--g07);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-weight: bold;
+  margin: 0 auto 0 auto;
+  font-size: 20px;
+  width: 80%;
+}
+
+.step__btn-green {
+  animation: pulse infinite 0.6s;
+  border: 0;
+  background-color: #2ac310;
+  color: var(--g01);
+  transition: 0.5s;
+}
+
+.step__btn-green:hover {
+  background-color: #0b4900;
+}
+
+.step__btn img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.step__text.small {
+  width: 80%;
+  margin: 0 auto 40px;
+}
+
+@media (max-width: 450px) {
+  .alert__text {
+    width: 80%;
+  }
+  .next-steps {
+    padding-top: 250px;
+  }
+  .step__card {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .step__text:last-of-type {
+    margin-bottom: 25px;
+  }
+
+  .step__btn {
+    font-size: 16px;
+  }
+}

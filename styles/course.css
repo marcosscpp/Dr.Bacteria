@@ -1,0 +1,34 @@
+@import url("global.css");
+@import url("./imports/footer.css");
+@import url("./imports/course/hero.css");
+@import url("./imports/course/info.css");
+@import url("./imports/course/product.css");
+@import url("./imports/course/module.css");
+@import url("./imports/course/testimony.css");
+@import url("./imports/course/faq.css");
+@import url("./imports/footer.css");
+
+.course {
+  background: #f6f6f3;
+}
+
+.course .cta-btn {
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 340px;
+}
+
+.course .cta-btn::after {
+  background: url("../assets/icons/shield-check.svg") no-repeat center / contain;
+  height: 25px;
+  width: 25px;
+  margin-left: 0;
+}
+
+@media (max-width: 500px) {
+  .course .cta-btn {
+    font-size: 14px;
+    width: 80%;
+  }
+}

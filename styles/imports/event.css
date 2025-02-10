@@ -1,0 +1,144 @@
+.event {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 440px;
+  z-index: 2;
+  transition: transform 0.4s ease-out;
+}
+
+.event.closed {
+  transform: translate(-50%, -101%);
+}
+
+.btn__icon {
+  transform: rotate(0deg);
+  transition: transform 0.4s;
+  filter: brightness(0) invert(1);
+}
+
+.btn__icon.closed {
+  transform: rotate(180deg);
+}
+
+.event__btn {
+  cursor: pointer;
+  position: absolute;
+  border: 0;
+  left: 50%;
+  padding: 5px 15px;
+  transform: translateX(-50%);
+  border-radius: 0 0 5px 5px;
+  background-color: var(--g08);
+  display: flex;
+}
+
+.event__btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.event__header {
+  background-color: var(--g07);
+  line-height: 1.2;
+  color: var(--g01);
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 60px;
+}
+
+.event__cards {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.event__card {
+  flex: 1;
+  background: var(--g01);
+  border-radius: 10px;
+  color: var(--g07);
+  padding: 5px 20px 5px 10px;
+}
+
+.event__info {
+  align-items: center;
+  background: linear-gradient(90deg, var(--g08), var(--g07));
+  border-radius: 0 0 25px 25px;
+  gap: 20px;
+  display: flex;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+.card__info {
+  font-size: 12px;
+}
+
+.card__info strong {
+  display: block;
+  font-weight: 900;
+}
+
+.card__icon {
+  height: 24px;
+  margin-left: 5px;
+}
+
+.event__date {
+  align-items: center;
+  color: var(--g01);
+  display: flex;
+  gap: 10px;
+}
+
+.date__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.date__icon {
+  width: 50px;
+}
+
+@media (max-width: 500px) {
+  .event {
+    width: 100%;
+  }
+
+  .event__cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .event__card {
+    padding: 10px 0;
+  }
+
+  .card__info {
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    display: flex;
+    font-size: 12px;
+  }
+
+  .card__icon {
+    height: 20px;
+    order: 1;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .event__date {
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  .date__icon {
+    width: 40px;
+  }
+}
